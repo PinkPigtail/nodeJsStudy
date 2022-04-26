@@ -1,0 +1,8 @@
+/node_modules
+.vscode/launch.json
+.node-xmlhttprequest-*
+.bak
+/test.js
+/test
+/swagger
+/.history
