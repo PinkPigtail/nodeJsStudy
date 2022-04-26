@@ -1,0 +1,12 @@
+{
+    "title":"myBlog系统-product环境",
+    "db": {
+        "user":"root",
+        "pwd": "root",
+        "host":"127.0.0.1",
+        "port":28888,
+        "datasource": "myblog_prod"
+    },
+    "PORT":"5051"
+}
+  
