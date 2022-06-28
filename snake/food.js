@@ -11,13 +11,9 @@ function Food(x, y, foodChar){
     this.randomXY = function(min, max) { // min最小值，max最大值
         return Math.floor(Math.random() * (max - min)) + min;
     }
-    
     this.x = x==null ? this.randomXY(1, maxX) : x;
     this.y = y==null ? this.randomXY(1, maxY) : y;
     this.shape = foodChar==null ? foodShapeChar : foodChar;
-
-    
-
     //随机更新food的x、y值(不能与原来的xy均相同)
     this.randomUpdateXY = function(){
         let oldX = this.x;
@@ -43,7 +39,6 @@ function Food(x, y, foodChar){
             this.x = this.x+1==(maxX-1) ? this.x-1 : this.x+1;
         }
     }
-
 }
 
 module.exports = {Food,}

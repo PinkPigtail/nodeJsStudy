@@ -12,7 +12,7 @@ function init(maxX, maxY){
     for(let j=0; j<=maxY; j++){
       xy[i][j] = airChar;
     }
-  }  
+  }
 }
 
 init(maxX, maxY);  //初始化数组
@@ -30,6 +30,5 @@ function printUI(xy, maxX, maxY){
   }
 }
 
-//printUI(xy, maxX, maxY)
 
 module.exports = {printUI, xy}

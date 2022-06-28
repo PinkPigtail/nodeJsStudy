@@ -15,7 +15,6 @@ function signKeypress(objArray){
         //console.log(str)
         let pressInfo = {key: key.name, time: Date.now()}
         objArray.push(pressInfo);
-        //console.log(objArray[objArray.length-1].time)
         //按住ctrl+c退出
         if(key.ctrl === true && key.name === 'c'){
             process.exit(0)
