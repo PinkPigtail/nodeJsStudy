@@ -1,4 +1,5 @@
 
+//游戏静态配置数据
 module.exports = {
     wallChar: '回',  //墙图案字符
     airChar: '  ',  //空白处字符

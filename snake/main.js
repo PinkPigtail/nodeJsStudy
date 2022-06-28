@@ -97,7 +97,8 @@ function getNewSnakeHeadNode(snakeHead, newDirection){
 
 
 
-//获取蛇最新的方向控制(1.上 2.下 3.左 4.右)  keyArray：键盘输入信息  speedMill：游戏的刷新间隔时间  snakeDirection：蛇当前的方向
+//获取蛇最新的方向控制(1.上 2.下 3.左 4.右)  
+//keyArray：键盘输入信息  speedMill：游戏的刷新间隔时间  snakeDirection：蛇当前的方向
 function getEffectiveDirectionNumber(keyArray, speedMill, snakeDirection){
     if(keyArray.length==0 || speedMill==null || snakeDirection==null){
         return snakeDirection;
