@@ -1,4 +1,4 @@
-var {maxX, maxY, airChar, snakeNodeChar, snakeHeadChar, speed, foodShapeChar, finishMsg} = require('./configParam')
+const {maxX, maxY, airChar, snakeNodeChar, snakeHeadChar, speed, foodShapeChar, finishMsg} = require('./configParam')
 const {xy, printUI} = require('./ui')
 const {Node, snake} = require('./snake')
 const {signKeypress} = require('./keypress')
