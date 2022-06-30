@@ -23,11 +23,11 @@ function printUI(xy, maxX, maxY){
   let lineInfo = '';
   for(let i=0; i<=maxX; i++){
     for(let j=0; j<=maxY; j++){
-      lineInfo += xy[i][j];
+      lineInfo = `${lineInfo}${xy[i][j]}`;
     }
-    console.log(lineInfo);
-    lineInfo = '';
+    i<maxX ? lineInfo=`${lineInfo}\n` : null;
   }
+  console.info(lineInfo);
 }
 
 
