@@ -25,9 +25,9 @@ function printUI(xy, maxX, maxY){
     for(let j=0; j<=maxY; j++){
       lineInfo = `${lineInfo}${xy[i][j]}`;
     }
-    i<maxX ? lineInfo=`${lineInfo}\n` : null;
+    lineInfo=`${lineInfo}\n`;
   }
-  console.info(lineInfo);
+  process.stdout.write(lineInfo);
 }
 
 
