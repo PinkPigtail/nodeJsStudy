@@ -3,6 +3,9 @@ sync.series：串⾏⽆关联：
 多个函数或⽅法要依次执⾏，但是他们之间并没有什么联系，只有先后的顺序，⽐如我要写⼀个⽂件，写完之后像⽤户发送邮
 件，这两者之间没有必然的联系，但是发邮件必须在写⽂件完成之后。
 */
+
+//参考文档：http://t.zoukankan.com/lilight-p-7512244.html
+
 var async = require('async');
 console.time('series');
 

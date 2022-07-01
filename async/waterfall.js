@@ -6,6 +6,8 @@ async.waterfall：串⾏有关联
 布流函数⽆错误时，会在执⾏完tasks数组中包含的函数后执⾏这个回调函数。
 */
 
+//参考文档：http://t.zoukankan.com/lilight-p-7512244.html
+
 async.waterfall([
     myFirstFun,
     mySecondFun,
@@ -23,7 +25,7 @@ async.waterfall([
     // arg1 相当于 'one' ,arg2 相当于 'two'
     callback(null,'three');
   }
-  
+
   function myLastFun(arg1,callback) {
     // arg1 相当于 'three'
     callback(null,'done');
