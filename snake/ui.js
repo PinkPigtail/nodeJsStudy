@@ -12,7 +12,7 @@ function init(maxX, maxY){
     for(let j=0; j<=maxY; j++){
       xy[i][j] = airChar;
     }
-  }  
+  }
 }
 
 init(maxX, maxY);  //初始化数组
@@ -23,13 +23,12 @@ function printUI(xy, maxX, maxY){
   let lineInfo = '';
   for(let i=0; i<=maxX; i++){
     for(let j=0; j<=maxY; j++){
-      lineInfo += xy[i][j];
+      lineInfo = `${lineInfo}${xy[i][j]}`;
     }
-    console.log(lineInfo);
-    lineInfo = '';
+    lineInfo=`${lineInfo}\n`;
   }
+  process.stdout.write(lineInfo);
 }
 
-//printUI(xy, maxX, maxY)
 
 module.exports = {printUI, xy}

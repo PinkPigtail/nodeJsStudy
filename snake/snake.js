@@ -1,4 +1,4 @@
-
+//蛇节点
 function Node(x, y, pre, next){
     this.x = x;
     this.y = y;
@@ -6,6 +6,11 @@ function Node(x, y, pre, next){
     this.next = next;
 }
 
+/**
+ * 蛇
+ * @param {*} initNode 初始节点（即是蛇头也是蛇尾）
+ * @param {*} initDirection （蛇初始前进方向）
+ */
 function snake(initNode, initDirection){
     this.head = initNode;  //蛇头
     this.tail = initNode;  //蛇尾

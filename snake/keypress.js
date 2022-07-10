@@ -12,18 +12,15 @@ function signKeypress(objArray){
     process.stdin.setRawMode(true);  //禁用控制台功能
     
     process.stdin.on('keypress', (str, key) => {
-        //console.log(str)
         let pressInfo = {key: key.name, time: Date.now()}
         objArray.push(pressInfo);
-        //console.log(objArray[objArray.length-1].time)
         //按住ctrl+c退出
         if(key.ctrl === true && key.name === 'c'){
             process.exit(0)
         }
     })
 }
+
 module.exports = {signKeypress}
 
-// var objArray = new Array();
-// signKeypress(objArray)
 
