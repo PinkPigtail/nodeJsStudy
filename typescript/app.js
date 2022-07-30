@@ -1,0 +1,31 @@
+var a = 1;
+console.log(a);
+var msg = 'hello';
+console.log(msg);
+var n = 1.2;
+console.log(n);
+var arr = [1, 2];
+console.log(arr);
+var arr2 = [3, 4];
+console.log(arr2);
+var b = false;
+console.log(b);
+var x = [1, 'a'];
+console.log(x[0]);
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+var c = Color.Red;
+console.log(c);
+var n1 = 1;
+n1 = null;
+n1 = undefined;
+var str = '1';
+var str2 = str; //str、str2 是 string 类型
+console.log(str2);
+var aa = function (x) { return x + 1; };
+console.log(aa(1));
+module.exports = { aa: aa };
